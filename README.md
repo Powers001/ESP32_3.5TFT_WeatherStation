@@ -46,6 +46,7 @@ General Call-outs:
 
 This is a heavily modified version of the CYD Internet Weather Station with 3 days Forecast on an ESP32 Cheap Yellow Display located here - https://medium.com/@androidcrypto/create-an-internet-weather-station-with-3-days-forecast-on-an-esp32-cheap-yellow-display-cyd-15eb5c353b1d
 
+====================================================================================================================================================================================================================================================================================
 ![Image 1](./images/esp32_cyd_weather_station_01_600h.png)
 
 ## Set up the TFT_eSPI library
