@@ -1,7 +1,38 @@
 # ESP32 & 3.5 Inch TFT WeatherStation
-This is the accompanying repository for my article "Create an Internet Weather Station with 3 days Forecast on an ESP32 Cheap Yellow Display ("CYD")" available here: https://medium.com/@androidcrypto/create-an-internet-weather-station-with-3-days-forecast-on-an-esp32-cheap-yellow-display-cyd-15eb5c353b1d
 
-For short - what is a "Cheap Yellow Display" ? This device was introduced some years ago and allowed for very fast development of projects where an ESP32, a TFT (optional Touch surface), an SD Card Reader and an RGB LED is required. The first version was equipped with a 2.8 inch large TFT display with **ILI9341** driver chip and **XPT2046** resistive Touch driver chip. Newer versions are sold with a **ST7789** display driver chip. Nowadays, the device is available with different display sizes (1.28 up to 7 inches) and driver chips, but I'm focusing on the 2.8 inch variants. The display has a size of **320 x 240** pixels in Landscape orientation. Most of the devices are driven by an ESP32 WROOM microcontroller, but I saw some others with an ESP32-S3 chip.
+Hardware:
+ESP32-S3 Wroom1
+Display - 3.5 TFT with S7796S driver 320x480
+
+Configured BodmersTFT_eSPI Library:
+1) User_Setup_Selech.h:
+  - #include <User_Setups/Setup27_RPi_ST7796_ESP32.h>
+
+2) User_Setup.h:
+-  #define ST7796_DRIVER
+-  #define TFT_BL   7            // LED back-light control pin
+-  #define TFT_MISO 19
+-  #define TFT_MOSI 11
+-  #define TFT_SCLK 12
+-  #define TFT_CS   4  // Chip select control pin
+-  #define TFT_DC    6  // Data Command control pin
+-  #define TFT_RST   5  // Reset pin (could connect to RST pin)
+-  #define SPI_FREQUENCY  40000000
+-  #define USE_FSPI_PORT // or USE_HSPI_PORT // This one is important! I could not get the display working until I read about this setting
+
+General Call-outs:
+- MISO, MOSI & SCLK need to be defined for any picture to display, even if MISO is not connected!
+- Ensure this is enabled "#define USE_FSPI_PORT // or USE_HSPI_PORT"  !!!!!
+- Backlight Control:
+#define TFT_BL   7            // LED back-light control pin
+//#define TFT_BACKLIGHT_ON HIGH  // Level to turn ON back-light (HIGH or LOW) // If uncommented backlight will stay bright (100%), 
+
+//If above line is uncommented, Control backlight in sketch with:
+  //pinMode(TFT_BL, OUTPUT);
+  //analogWrite(TFT_BL, 10);  // Set backlight to full brightness (0-255)
+  //delay(10);
+
+This is a heavily modified version of the CYD Internet Weather Station with 3 days Forecast on an ESP32 Cheap Yellow Display located here - https://medium.com/@androidcrypto/create-an-internet-weather-station-with-3-days-forecast-on-an-esp32-cheap-yellow-display-cyd-15eb5c353b1d
 
 ![Image 1](./images/esp32_cyd_weather_station_01_600h.png)
 
