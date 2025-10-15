@@ -4,6 +4,8 @@ Hardware:
 ESP32-S3 Wroom1
 Display - 3.5 TFT with S7796S driver 320x480
 
+![Image 1](./images/WeatherStation.jpg)
+
 Configured BodmersTFT_eSPI Library:
 1) User_Setup_Selech.h:
   - #include <User_Setups/Setup27_RPi_ST7796_ESP32.h>
