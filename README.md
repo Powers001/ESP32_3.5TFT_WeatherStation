@@ -8,7 +8,7 @@ Display - 3.5 TFT with S7796S driver 480x320 (Landscape) - Approx $14 USD from A
 
 Key Features/Enhancements:
 
-- Sketch will update the current time every 1 minute while the weather information, forecasts, and graphs refresh on a 10-minute interval (or whatever UPDATE_INTERVAL_SECS is set to in your All_Settings.h file).
+- Sketch will update the current time every 1 minute while the weather information, forecasts and graphs refresh on a 10-minute interval (or whatever UPDATE_INTERVAL_SECS is set to in your All_Settings.h file).
 
 - A circular rotating animation that appears to show when the weather info is being updated (about 100 pixels right of the time) and vertically centered with the time/temperature line, ensuring it doesn't interfere with any of your existing display elements or clearing functions.
 
