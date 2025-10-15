@@ -2,7 +2,7 @@
 
 Hardware:
 ESP32-S3 Wroom1
-Display - 3.5 TFT with S7796S driver 480x320
+Display - 3.5 TFT with S7796S driver 480x320 (Landscape)
 
 ![Image 1](./images/WeatherStationv2.jpg)
 
