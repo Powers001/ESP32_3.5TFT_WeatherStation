@@ -16,6 +16,8 @@ Key Features/Enhancements:
 
 - Added a 24 hour temperature forecast line graph
 
+Ensure that LittleFS is installed & the "icon" folder is uploaded, otherwise nothing will display on the screen
+
 Configured BodmersTFT_eSPI Library:
 1) User_Setup_Selech.h:
   - #include <User_Setups/Setup27_RPi_ST7796_ESP32.h>
