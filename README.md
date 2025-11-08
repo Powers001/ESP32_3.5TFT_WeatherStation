@@ -87,13 +87,14 @@ The TFT display pins are configured in the `User_Config.h` file inside the TFT_e
 
 ### Typical ESP32 SPI Pins
 ```cpp
-TFT_MISO  19
-TFT_MOSI  23
-TFT_SCLK  18
-TFT_CS    15
-TFT_DC    2
-TFT_RST   4
-TFT_BL    32  // Backlight PWM (configurable in All_Settings.h)
+TFT_MISO 19
+TFT_MOSI 11
+TFT_SCLK 12
+TFT_CS   4  // Chip select control pin 
+TFT_DC    6  // Data Command control pin
+TFT_RST   5  // Reset pin
+TFT_BL   7  // LED back-light control pin
+//TFT_RST  -1  // Set TFT_RST to -1 if display RESET is connected to ESP32 board RST
 ```
 
 **Note**: Pin assignments may vary depending on your specific ESP32 board and TFT display. Always verify with your hardware documentation.
