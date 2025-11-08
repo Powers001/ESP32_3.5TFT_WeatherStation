@@ -34,7 +34,7 @@ const String units = "metric";
 
 // Sign up for a key and read API configuration info here:
 // https://openweathermap.org/, change x's to your API key
-const String api_key = "ccd54e436bd392c4e6f664a77f68a462";
+const String api_key = ""; // instert API key here
 
 // Set the forecast longitude and latitude to at least 4 decimal places
 
