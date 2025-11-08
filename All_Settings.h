@@ -48,7 +48,7 @@ const String language = "en";  // Default language = en = English
 
 // OpenUV API configuration
 const String OPENUV_API_URL = "https://api.openuv.io/api/v1/uv";
-const String OPENUV_API_KEY = "openuv-2bngarmh8l2aho-io"; // replace with your key if needed
+const String OPENUV_API_KEY = ""; // replace with your key if needed
 
 // Display and UI
 #define AA_FONT_SMALL "fonts/NSBold15"
