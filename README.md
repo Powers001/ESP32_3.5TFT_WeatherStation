@@ -10,9 +10,6 @@ Hardware:
 
 A feature-rich weather station for ESP32 with a 3.5" TFT display (320x480 landscape), showing real-time weather data, forecasts, UV index, and astronomical information.
 
-![Weather Station](https://img.shields.io/badge/ESP32-Weather%20Station-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-
 ## Features
 
 ### Current Weather Display
